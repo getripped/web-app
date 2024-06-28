@@ -1,3 +1,5 @@
 import "./assets/style.css";
 
-console.log("hiiiii")
+import favicon from './modules/favicon';
+
+favicon()
