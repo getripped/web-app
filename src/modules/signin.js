@@ -1,4 +1,5 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import welcome from "./welcome";
 
 export default function signin() {
     const provider = new GoogleAuthProvider();
@@ -22,6 +23,7 @@ export default function signin() {
                 localStorage.setItem("user_object", JSON.stringify(user));
                 localStorage.setItem("user_name", JSON.stringify(user.displayName));
                 
+                welcome()
             })
             .catch((error) => {
                 // Handle Errors here.

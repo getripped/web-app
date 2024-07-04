@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     images();
     firebase();
     signin();
-    welcome();
+    // welcome();
 });

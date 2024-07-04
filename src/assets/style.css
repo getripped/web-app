@@ -90,6 +90,7 @@ body {
 
 .pfp img {
     height: 80px;
+    border-radius: 50%;
 }
 
 .welcome-user {

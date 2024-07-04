@@ -1,3 +1,5 @@
+import welcome from "./welcome";
+
 export default function checkLS() {
     const userObject = JSON.parse(localStorage.getItem("user_object"));
 
@@ -5,7 +7,7 @@ export default function checkLS() {
     const two = document.querySelector('.two');
 
     if(userObject) {
-        two.classList.remove('hide');
+        welcome()
     }
 
     else {
