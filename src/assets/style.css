@@ -18,8 +18,6 @@ body {
     height: 100vh;
 }
 
-
-
 .container {
     background-color: black;
     color: white;
@@ -84,4 +82,67 @@ body {
     color: black;
     display: flex;
     font-weight: bold;
+}
+
+.two {
+    gap: 20px;
+}
+
+.pfp img {
+    height: 80px;
+}
+
+.welcome-user {
+    font-size: 24px;
+}
+
+.get-started-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(52, 52, 52);
+    padding: 15px;
+    border: 2px #eeeeeecc solid;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
 }
