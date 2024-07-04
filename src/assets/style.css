@@ -10,7 +10,7 @@
 }
 
 body {
-    /* background-color: rgb(31, 9, 9); */
+    background-color: black;
     color: white;
     display: flex;
     justify-content: center;
