@@ -1,12 +1,4 @@
-import {
-    getFirestore,
-    collection,
-    getDocs,
-    addDoc,
-    deleteDoc,
-    doc,
-    setDoc,
-} from "firebase/firestore";
+import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 export default function userDataFB(userUID) {
     // init services
@@ -19,6 +11,6 @@ export default function userDataFB(userUID) {
     setDoc(userDataRef, {
         email: userObject.email,
         name: userObject.displayName,
-        photo: userObject.photoURL
+        photo: userObject.photoURL,
     });
 }

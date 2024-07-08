@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>get ripped</title>
 
-    <script src="./bundle.js"></script>
+    <!-- <script src="./bundle.js"></script> -->
+
+    <link rel="stylesheet" href="../src/assets/style.css">
 </head>
 
 <body>
@@ -48,11 +50,43 @@
         </div>
     </div>
 
-    <div class="container three hide">
+    <div class="container three">
         <div class="heading">
-            select playlist:
+            select routine:
+        </div>
+        <div class="routine-section">
+            <div class="routine-name">
+                test one
+            </div>
+            <div class="routine-name">
+                test two
+            </div>
+            <div class="routine-name">
+                test three
+            </div>
+        </div>
+
+        <div class="add-routine-btn">
+            <button>create !</button>
         </div>
     </div>
+
+
+
+
+
+    <script>
+        // Get all elements with class 'routine-name'
+        const routineNames = document.querySelectorAll('.routine-name');
+
+        // Add click event listener to each routine name
+        routineNames.forEach(routine => {
+            routine.addEventListener('click', function() {
+                // Log the content of the clicked div to the console
+                console.log(this.textContent.trim());
+            });
+        });
+    </script>
 </body>
 
 </html>

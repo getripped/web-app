@@ -38,7 +38,7 @@ body {
     font-size: 40px;
 }
 
-.heading {
+.main .heading {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -111,12 +111,39 @@ body {
     cursor: pointer;
 }
 
-/* .one,
+.one,
 .two {
     display: none;
-} */
+}
 
+.three .heading {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
 
+.routine-section {
+    display: flex;  
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.routine-name {
+    font-size: 30px;
+    border: 2px white solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-routine-btn button{
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 
 
