@@ -1,5 +1,6 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import welcome from "./welcome";
+import userDataFB from "./userDataFB";
 
 export default function signin() {
     const provider = new GoogleAuthProvider();
@@ -22,6 +23,8 @@ export default function signin() {
 
                 localStorage.setItem("user_object", JSON.stringify(user));
                 localStorage.setItem("user_name", JSON.stringify(user.displayName));
+
+                userDataFB(user.uid)
                 
                 welcome()
             })
