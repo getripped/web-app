@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 .main {
@@ -128,7 +128,7 @@ body {
     padding-bottom: 30px;
 }
 
-.routine-name {
+.three .routine-name {
     font-size: 30px;
     border: 2px white solid;
     padding: 10px 20px;
@@ -145,13 +145,64 @@ body {
     cursor: pointer;
 }
 
+input {
+    all: unset;
+}
 
+.routine-name-input {
+    border: 2px white solid;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
 
+.exercises {
+    display: flex;  
+    flex-direction: column;
+    width: 240px;
+}
 
+.exercises-name-input {
+    border-bottom: 2px solid white;
+}
 
+.details {
+    display: flex;
+    justify-content: center;    
+    margin-top: 10px;
+    gap: 15px;
+}
 
+.details > input {
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4px;
+}
 
+.plus-btn {
+    height: 30px;
+    padding-top: 20px;
+}
 
+.plus-btn img {
+    height: 30px;
+}
+
+.done-btn {
+    position: absolute;
+    bottom: 100px;
+}
+
+.done-btn button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: 2px white solid;
+}
 
 
 
