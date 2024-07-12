@@ -5,7 +5,6 @@ import images from "./modules/images";
 
 import signin from "./modules/signin";
 import firebase from "./modules/firebase";
-// import welcome from "./modules/welcome";
 import checkLS from "./modules/checkLS";
 import createRoutine from "./modules/createRoutine";
 import displayRoutine from "./modules/displayRoutine";
@@ -18,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     firebase();
     signin();
     // welcome();
-    displayRoutine()
-    createRoutine();
+    displayRoutine();
+    createRoutine();\
 });
 
 // import { getFirestore, collection, getDocs } from "firebase/firestore";
@@ -36,8 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // };
 
 // const app = initializeApp(firebaseConfig);
-
-
 
 // const collectionRef = collection(db, "mycollection");
 
