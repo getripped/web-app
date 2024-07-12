@@ -2,6 +2,9 @@ import { setLogLevel } from "firebase/app";
 import routineFB from "./routineFB";
 
 export default function createRoutine() {
+    const three = document.querySelector(".three");
+    const four = document.querySelector(".four");
+
     let routineName = "default";
     let routineObj = new Object();
 
@@ -40,6 +43,10 @@ export default function createRoutine() {
 
     doneBtn.addEventListener("click", () => {
         console.log(routineObj);
+
+        four.classList.add('hide');
+        three.classList.remove('hide');
+
         routineFB(routineName, routineObj);
     });
 }
