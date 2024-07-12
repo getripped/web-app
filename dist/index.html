@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>get ripped</title>
 
-    <!-- <script src="./bundle.js"></script> -->
+    <script src="./bundle.js"></script>
 
-    <link rel="stylesheet" href="../src/assets/style.css">
+    <!-- <link rel="stylesheet" href="../src/assets/style.css"> -->
 </head>
 
 <body>
@@ -71,20 +71,27 @@
         </div>
     </div>
 
-    <div class="container four">
+    <div class="container four hide">
         <div class="routine-name">
             <input type="text" class="routine-name-input" placeholder="enter routine name...">
         </div>
         <div class="exercises">
             <input type="text" class="exercises-name-input" placeholder="enter exersise name">
             <div class="details">
-                <input type="number" placeholder="sets">
-                <input type="number" placeholder="reps">
-                <input type="number" placeholder="secs">
+                <input class="sets-input" type="number" placeholder="sets">
+                <input class="reps-input" type="number" placeholder="reps">
+                <input class="secs-input" type="number" placeholder="secs">
             </div>
+            <select class="equipment-input" >
+                <option value="" disabled selected>select equipment ᐁ</option>
+                <option value="no eqipment">no eqipment</option>
+                <option value="dumbbells">dumbbells</option>
+                <option value="barbell">barbell</option>
+                <option value="ez bar">ez bar</option>
+            </select>
         </div>
         <div class="plus-btn">
-            <img src="../src/assets/plus.svg" alt="">
+            <img src="" alt="">
         </div>
 
 
@@ -98,7 +105,7 @@
 
 
 
-    <script>
+    <!-- <script>
         // Get all elements with class 'routine-name'
         const routineNames = document.querySelectorAll('.routine-name');
 
@@ -109,7 +116,7 @@
                 console.log(this.textContent.trim());
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

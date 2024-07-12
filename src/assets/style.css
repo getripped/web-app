@@ -111,10 +111,10 @@ body {
     cursor: pointer;
 }
 
-.one,
+/* .one,
 .two {
     display: none;
-}
+} */
 
 .three .heading {
     font-size: 40px;
@@ -160,6 +160,7 @@ input {
     display: flex;  
     flex-direction: column;
     width: 240px;
+    align-items: center;
 }
 
 .exercises-name-input {
@@ -180,9 +181,26 @@ input {
     padding: 4px;
 }
 
+.exercises select {
+    all: unset;
+    width: 180px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.exercises select option{
+    all: unset;
+    background-color: white;
+    color: black;
+}
+
 .plus-btn {
     height: 30px;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .plus-btn img {
