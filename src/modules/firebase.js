@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 
 export default function firebase() {
     const firebaseConfig = {
@@ -16,4 +18,17 @@ export default function firebase() {
     // const analytics = getAnalytics(app);
 
     // console.log(app);
+
+    const db = getFirestore(app);
+
+    // Function to list all collections
+    async function listAllCollections() {
+      const collections = await getDocs(collection(db, '/'));
+      collections.forEach(doc => {
+        console.log(doc.id);
+      });
+    }
+    
+    // Call the function to list collections
+    listAllCollections().catch(console.error);
 }

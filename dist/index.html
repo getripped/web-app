@@ -82,7 +82,7 @@
                 <input class="reps-input" type="number" placeholder="reps">
                 <input class="secs-input" type="number" placeholder="secs">
             </div>
-            <select class="equipment-input" >
+            <select class="equipment-input">
                 <option value="" disabled selected>select equipment ᐁ</option>
                 <option value="no eqipment">no eqipment</option>
                 <option value="dumbbells">dumbbells</option>
@@ -98,25 +98,46 @@
         <div class="done-btn">
             <button>done</button>
         </div>
-        
+
+    </div>
+
+    <div class="container five hide">
+        <div class="workout-name">chest</div>
+        <div class="exercises">
+            <div class="exercise-box">
+                <div class="exercise-name">
+                    plank
+                </div>
+                <div class="details-section">
+                    <div class="sets">sets: 2</div>
+                    <div class="duration">60 seconds</div>
+                </div>
+            </div>
+            <div class="exercise-box">
+                <div class="exercise-name">
+                    push ups
+                </div>
+                <div class="details-section">
+                    <div class="sets">sets: 2</div>
+                    <div class="reps">reps: 15</div>
+                </div>
+            </div>
+            <div class="exercise-box">
+                <div class="exercise-name">
+                    incline pushups
+                </div>
+                <div class="details-section">
+                    <div class="sets">sets: 2</div>
+                    <div class="reps">reps: 20</div>
+                </div>
+            </div>
+        </div>
+        <div class="workout-done-btn">
+            done
+        </div>
     </div>
 
 
-
-
-
-    <!-- <script>
-        // Get all elements with class 'routine-name'
-        const routineNames = document.querySelectorAll('.routine-name');
-
-        // Add click event listener to each routine name
-        routineNames.forEach(routine => {
-            routine.addEventListener('click', function() {
-                // Log the content of the clicked div to the console
-                console.log(this.textContent.trim());
-            });
-        });
-    </script> -->
 </body>
 
 </html>

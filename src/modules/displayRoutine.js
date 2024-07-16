@@ -38,19 +38,13 @@ export default function displayRoutine() {
             console.log("Document IDs:", routineArr);
         })
         .then(() => {
-            // Get all elements with class 'routine-name'
             const routineNames = document.querySelectorAll(".routine-name");
-            console.log(routineNames);
 
-            // Add click event listener to each routine name
             routineNames.forEach((routine) => {
-                // console.log("fjkd");
                 routine.addEventListener("click", function () {
-                    // Log the content of the clicked div to the console
-                    let exerciseName = this.textContent.trim()
+                    let exerciseName = this.textContent.trim();
                     console.log(exerciseName);
-                    // console.log("clicked");
-                    selectRoutine(exerciseName)
+                    selectRoutine(exerciseName);
                 });
             });
         })

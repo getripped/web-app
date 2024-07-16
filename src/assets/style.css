@@ -111,10 +111,21 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
+
+
 /* .one,
 .two {
     display: none;
 } */
+
+
+
+
+
 
 .three .heading {
     font-size: 40px;
@@ -223,6 +234,39 @@ input {
     border: 2px white solid;
 }
 
+.five .workout-name {
+    font-size: 30px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid white;
+}
+
+.exercises {
+    gap: 25px;
+}
+
+.exercise-box {
+    display: flex;  
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;    
+    justify-content: center;
+    gap: 10px;
+}
+
+.details-section {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.workout-done-btn {
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+}
 
 
 
