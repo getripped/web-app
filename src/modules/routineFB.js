@@ -12,7 +12,7 @@ export default function routineFB(routineName, routineObj) {
         setDoc(
             routineFieldRef,
             {
-                field: "field",
+                [key]:key
             },
             { merge: true }
         );

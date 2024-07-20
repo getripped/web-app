@@ -9,30 +9,19 @@ export default function selectRoutine(exerciseName) {
         five.classList.remove("hide");
     }
 
-
-
-
-
-
-
     const userObject = JSON.parse(localStorage.getItem("user_object"));
     let uid = userObject.uid;
 
-
-
     const db = getFirestore();
 
-    // Specify the document path
     const docRef = doc(db, uid, exerciseName);
-
-    // Get the document
     getDoc(docRef)
         .then((docSnap) => {
             if (docSnap.exists()) {
-                // Document data
-                console.log("Document data:", docSnap.data());
+                const data = docSnap.data();
+                const exerciseNameArray = Object.keys(data);
+                console.log(exerciseNameArray);
             } else {
-                // doc.data() will be undefined in this case
                 console.log("No such document!");
             }
         })
