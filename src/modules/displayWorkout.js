@@ -36,5 +36,7 @@ export default function displayWorkout(workoutName, exerciseNameArray) {
         addToCalendarFB(workoutName);
         const five = document.querySelector(".five");
         five.classList.add("hide");
+        const six = document.querySelector(".six");
+        six.classList.remove("hide");
     });
 }

@@ -8,6 +8,7 @@ import firebase from "./modules/firebase";
 import checkLS from "./modules/checkLS";
 import createRoutine from "./modules/createRoutine";
 import displayRoutine from "./modules/displayRoutine";
+import viewInCalendar from "./modules/viewInCalendar";
 
 favicon();
 
@@ -19,4 +20,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // welcome();
     displayRoutine();
     createRoutine();
+    viewInCalendar();
 });
