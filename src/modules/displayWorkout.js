@@ -1,6 +1,7 @@
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import displayExercise from "./displayExercise";
 import addToCalendarFB from "./addToCalendarFB";
+import viewInCalendar from "./viewInCalendar";
 
 export default function displayWorkout(workoutName, exerciseNameArray) {
     const userObject = JSON.parse(localStorage.getItem("user_object"));
@@ -38,5 +39,7 @@ export default function displayWorkout(workoutName, exerciseNameArray) {
         five.classList.add("hide");
         const six = document.querySelector(".six");
         six.classList.remove("hide");
+
+        // viewInCalendar();
     });
 }

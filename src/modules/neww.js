@@ -6,7 +6,7 @@ import calendarImg from "../assets/calendar.svg";
 
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 
-export default function viewInCalendar() {
+export default function neww() {
     const calendarDiv = document.querySelector("#calendar");
 
     const six = document.querySelector(".six");

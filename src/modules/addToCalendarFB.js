@@ -4,7 +4,7 @@ export default function addToCalendar(workoutName) {
     const currentDate = new Date();
     console.log(currentDate);
 
-    let formattedDate = `${currentDate.getFullYear()}-${
+    let formattedDate = `${currentDate.getFullYear()}-0${
         currentDate.getMonth() + 1
     }-${currentDate.getDate()}`;
     console.log(formattedDate);
