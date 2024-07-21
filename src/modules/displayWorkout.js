@@ -1,6 +1,6 @@
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import displayExercise from "./displayExercise";
-import addToCalendar from "./addToCalendar";
+import addToCalendarFB from "./addToCalendarFB";
 
 export default function displayWorkout(workoutName, exerciseNameArray) {
     const userObject = JSON.parse(localStorage.getItem("user_object"));
@@ -33,7 +33,7 @@ export default function displayWorkout(workoutName, exerciseNameArray) {
     const workoutDoneBtn = document.querySelector(".workout-done-btn");
 
     workoutDoneBtn.addEventListener("click", () => {
-        addToCalendar(workoutName);
+        addToCalendarFB(workoutName);
         const five = document.querySelector(".five");
         five.classList.add("hide");
     });

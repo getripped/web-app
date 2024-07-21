@@ -1,5 +1,4 @@
 import { getFirestore, doc, setDoc } from "firebase/firestore";
-import viewInCalendar from "./viewInCalendar";
 
 export default function addToCalendar(workoutName) {
     const currentDate = new Date();
