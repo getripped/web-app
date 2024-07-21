@@ -127,6 +127,9 @@ body {
 
 
 
+
+
+
 .three .heading {
     font-size: 40px;
     padding-bottom: 30px;
@@ -276,7 +279,9 @@ input {
 
 
 
-
+#calendar {
+    height: 460px;
+}
 
 
 

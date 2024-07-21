@@ -1,4 +1,4 @@
-export default function displayExercise(exerciseName, data) {
+export default function displayExercise(exerciseName, data, workoutName) {
     // console.log(data);
     const exercisesDiv = document.querySelector(".five .exercises");
 

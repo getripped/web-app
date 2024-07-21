@@ -27,13 +27,15 @@ export default function displayRoutine() {
     getDocs(testRef)
         .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-                routineArr.push(doc.id);
+                if (doc.id != "dates") {
+                    routineArr.push(doc.id);
 
-                let tempEl = document.createElement("div");
-                tempEl.classList.add("routine-name");
-                tempEl.innerHTML = doc.id;
+                    let tempEl = document.createElement("div");
+                    tempEl.classList.add("routine-name");
+                    tempEl.innerHTML = doc.id;
 
-                routineSection.appendChild(tempEl);
+                    routineSection.appendChild(tempEl);
+                }
             });
             console.log("Document IDs:", routineArr);
         })
