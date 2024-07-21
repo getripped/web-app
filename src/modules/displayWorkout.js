@@ -39,7 +39,5 @@ export default function displayWorkout(workoutName, exerciseNameArray) {
         five.classList.add("hide");
         const six = document.querySelector(".six");
         six.classList.remove("hide");
-
-        // viewInCalendar();
     });
 }

@@ -17,10 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     images();
     firebase();
     signin();
-    // welcome();
     displayRoutine();
     createRoutine();
     viewInCalendar();
 
-    // neww()
 });
