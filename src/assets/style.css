@@ -325,7 +325,7 @@ input {
 
 .exit-btn {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     font-size: 30px;
     border: 2px solid white;
     border-radius: 20px;
