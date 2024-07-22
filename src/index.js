@@ -9,16 +9,17 @@ import checkLS from "./modules/checkLS";
 import createRoutine from "./modules/createRoutine";
 import displayRoutine from "./modules/displayRoutine";
 import viewInCalendar from "./modules/viewInCalendar";
+// import load from "./modules/load";
 
 favicon();
 
 document.addEventListener("DOMContentLoaded", () => {
+    // load()
     checkLS();
     images();
     firebase();
+    viewInCalendar();
     signin();
     displayRoutine();
     createRoutine();
-    viewInCalendar();
-
 });

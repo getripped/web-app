@@ -111,6 +111,22 @@ body {
     cursor: pointer;
 }
 
+.calendar-view {
+    display: flex;  
+    justify-content: center;    
+    align-content: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 120px;
+    cursor: pointer;
+}
+
+.calendar-view img {
+    height: 40px;
+}
+
 
 
 
@@ -273,6 +289,7 @@ input {
 
 #calendar {
     height: 460px;
+    position: absolute;
 }
 
 .six {
@@ -287,7 +304,7 @@ input {
     font-size: 20px;
 }
 
-.view {
+.home {
     display: flex;
     align-items: center;    
     justify-content: center;
@@ -298,20 +315,23 @@ input {
     cursor: pointer;
 }
 
-.v {
-    font-size: 28px;
+.exit-btn {
+    position: absolute;
+    bottom: 80px;
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
 }
-
-.view img {
-    height: 35px;
-}
-
-
-
 
 
 
 
 .hide {
     display: none;
+}
+
+.visibility {
+    visibility: hidden;
 }

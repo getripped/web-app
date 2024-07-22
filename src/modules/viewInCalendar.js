@@ -2,18 +2,17 @@ import { Calendar } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 
-import calendarImg from "../assets/calendar.svg";
-
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 export default function viewInCalendar() {
     const calendarDiv = document.querySelector("#calendar");
 
-    const six = document.querySelector(".six");
-    const sixView = document.querySelector(".six .view");
+    const calendarViewDiv = document.querySelector(".calendar-view");
+    const exitBtn = document.querySelector(".exit-btn");
 
-    const sixViewImg = document.querySelector(".six .view img");
-    sixViewImg.src = calendarImg;
+    const six = document.querySelector(".six");
+    const two = document.querySelector(".two");
+    const sixHome = document.querySelector(".six .home");
 
     const userObject = JSON.parse(localStorage.getItem("user_object"));
     let uid = userObject.uid;
@@ -56,11 +55,27 @@ export default function viewInCalendar() {
             return calendar;
         })
         .then((calendar) => {
-            sixView.addEventListener("click", () => {
+            calendar.render();
+        })
+        .then(() => {
+            sixHome.addEventListener("click", () => {
                 six.classList.add("hide");
-                calendarDiv.classList.remove("hide");
-                calendar.render();
+                two.classList.remove("hide");
+
+                viewInCalendar()
             });
+
+            calendarViewDiv.addEventListener("click", () => {
+                calendarDiv.classList.remove("visibility");
+                two.classList.add("hide");
+                exitBtn.classList.remove('hide');
+            });
+
+            exitBtn.addEventListener("click",() => {
+                calendarDiv.classList.add("visibility");
+                two.classList.remove("hide");
+                exitBtn.classList.add('hide');
+            })
         })
 
         .catch((error) => {
