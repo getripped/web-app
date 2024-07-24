@@ -15,10 +15,20 @@ export default function selectRoutine(exerciseName) {
         .then((docSnap) => {
             if (docSnap.exists()) {
                 const data = docSnap.data();
-                const exerciseNameArray = Object.keys(data);
+                // const exerciseNameArray = Object.keys(data);
+
+                const exerciseNameArray = [];
+                Object.keys(data)
+                    .sort()
+                    .forEach((key) => {
+                        exerciseNameArray.push(data[key]);
+                    });
+
                 console.log(exerciseNameArray);
+
                 three.classList.add("hide");
                 five.classList.remove("hide");
+
                 displayWorkout(exerciseName, exerciseNameArray);
             } else {
                 console.log("No such document!");

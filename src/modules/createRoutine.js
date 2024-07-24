@@ -47,6 +47,6 @@ export default function createRoutine() {
         four.classList.add('hide');
         three.classList.remove('hide');
 
-        routineFB(routineName, routineObj);
+        routineFB(routineName, routineObj, 0);
     });
 }

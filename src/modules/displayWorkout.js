@@ -1,7 +1,6 @@
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import displayExercise from "./displayExercise";
 import addToCalendarFB from "./addToCalendarFB";
-import viewInCalendar from "./viewInCalendar";
 
 export default function displayWorkout(workoutName, exerciseNameArray) {
     const userObject = JSON.parse(localStorage.getItem("user_object"));

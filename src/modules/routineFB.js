@@ -1,18 +1,20 @@
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
-export default function routineFB(routineName, routineObj) {
+export default function routineFB(routineName, routineObj, num) {
     const db = getFirestore();
 
     const userObject = JSON.parse(localStorage.getItem("user_object"));
     let uid = userObject.uid;
 
     for (const key in routineObj) {
+        num = num + 1;
+
         const routineFieldRef = doc(db, `${uid}`, `${routineName}`);
 
         setDoc(
             routineFieldRef,
             {
-                [key]:key
+                [num]: key,
             },
             { merge: true }
         );
