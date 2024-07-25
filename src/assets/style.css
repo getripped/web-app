@@ -1,6 +1,6 @@
 @font-face {
     font-family: "VarelaRound";
-    src: url('./VarelaRound.ttf') format('truetype');
+    src: url("./VarelaRound.ttf") format("truetype");
 }
 
 * {
@@ -112,8 +112,8 @@ body {
 }
 
 .calendar-view {
-    display: flex;  
-    justify-content: center;    
+    display: flex;
+    justify-content: center;
     align-content: center;
     border: 2px solid white;
     border-radius: 20px;
@@ -127,32 +127,13 @@ body {
     height: 40px;
 }
 
-
-
-
-
-
-
-/* .one,
-.two {
-    display: none;
-} */
-
-
-
-
-
-
-
-
-
 .three .heading {
     font-size: 40px;
     padding-bottom: 30px;
 }
 
 .routine-section {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 30px;
@@ -169,7 +150,7 @@ body {
     cursor: pointer;
 }
 
-.add-routine-btn button{
+.add-routine-btn button {
     font-size: 25px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -188,7 +169,7 @@ input {
 }
 
 .exercises {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     width: 240px;
     align-items: center;
@@ -200,7 +181,7 @@ input {
 
 .details {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin-top: 10px;
     gap: 15px;
 }
@@ -222,7 +203,7 @@ input {
     text-align: center;
 }
 
-.exercises select option{
+.exercises select option {
     all: unset;
     background-color: white;
     color: black;
@@ -253,6 +234,12 @@ input {
     border: 2px white solid;
 }
 
+.five {
+    display: flex;
+    justify-content: flex-start;
+    /* margin-bottom: 500px; */
+}
+
 .five .workout-name {
     font-size: 30px;
     margin-bottom: 25px;
@@ -264,10 +251,10 @@ input {
 }
 
 .exercise-box {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     font-size: 20px;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     gap: 10px;
 }
@@ -293,13 +280,6 @@ input {
     max-width: 345px;
 }
 
-/* #calendar .fc-header-toolbar {
-    font-size: 13px;
-    /* max-width: 345px; 
-} */
-
-
-
 .six {
     gap: 20px;
 }
@@ -314,7 +294,7 @@ input {
 
 .home {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     gap: 15px;
     border: 2px solid white;
@@ -332,9 +312,6 @@ input {
     padding: 6px 10px;
     cursor: pointer;
 }
-
-
-
 
 .hide {
     display: none;
